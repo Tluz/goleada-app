@@ -31,7 +31,7 @@ AvailableItens availableitens = JsonSerializer.Deserialize<AvailableItens>(respo
 //Console.Write(responseString);
 foreach (var itens in availableitens.resultado!)
 {
-    if (itens.esgotado == "Esgotado")
+    if (itens.esgotado == "")
     {
         availableitensstring += ($"Produto disponível: {itens.sfi_descricao}") + Environment.NewLine;
     
